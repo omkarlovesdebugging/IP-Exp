@@ -1,0 +1,98 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#header {
+    background-color: lightgray;
+    padding: 25px;
+}
+.something {
+    margin-bottom: 10px;
+}
+
+/* #About {
+    margin-bottom: 5px;
+} */
+#Leftside {
+    /* display: flex; */
+    margin: 0px;
+    width: 250px;
+    padding: 10px;
+    padding-left: 10px;
+    border-right: 1px solid black;
+}
+
+#Rightside {
+    /* display: flex; */
+    margin: 0px;
+    padding: 0px;
+    padding: 15px;
+    width: 100%;
+}
+#main{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+}
+#ques {
+    margin: 10px;
+    margin-bottom: 20px;
+}
+#table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 30px 0;
+    /* border: 1px solid black; */
+    
+    
+}
+td ,th {
+    border: 1px solid lightgray;
+    padding: 8px;
+}
+tr:nth-child(1) {
+    background-color: #84e4e2;
+    color: white;
+}
+
+tr td i.fas {
+    display: block;
+    font-size: 35px;
+    text-align: center;
+}
+
+form {
+    margin: 15px;
+}
+.labels {
+    font-size: 18px;
+    margin-bottom: 15px;
+    
+}
+input {
+    margin-bottom: 3px;
+    margin-left: 10px;
+}
+textarea {
+    margin: 10px;
+    height: 80px;
+    width: 200px;
+}
+#submit{
+    padding: 3px;
+}
+footer {
+    background-color: darkslateblue;
+    text-align: center;
+    /* height: 150px; */
+    color: white;
+    justify-content: center;
+    padding: 55px 20px;
+}
+/* .row {
+    border: 1px solid black;
+} */
