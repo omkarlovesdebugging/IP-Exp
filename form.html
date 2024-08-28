@@ -11,12 +11,12 @@
         <fieldset>
             <legend>T-Shirt Details</legend>
             
-            <label for="tagline">Tagline on the Shirt:</label>
-            <input type="text" id="tagline" name="tagline" placeholder="Enter tagline" required=""><br><br>
+            <label for="tagline">Tagline:</label>
+            <input type="text" id="tagline" placeholder="Tagline" ><br><br>
 
             <label for="color">Color:</label>
-            <select id="color" name="color" required="">
-                <option value="">Select a color</option>
+            <select id="color"  >
+                <option value="">Select</option>
                 <option value="red">Red</option>
                 <option value="blue">Blue</option>
                 <option value="green">Green</option>
@@ -26,38 +26,40 @@
 
             <label for="size">Size:</label>
             <select id="size" name="size" required="">
-                <option value="">Select a size</option>
+                <option value="">Select </option>
                 <option value="small">Small</option>
                 <option value="medium">Medium</option>
                 <option value="large">Large</option>
                 <option value="xl">XL</option>
+                <option value="xl">XXL</option>
+                <option value="xl">XXXL</option>
             </select><br><br>
 
             <label for="quantity">Quantity:</label>
-            <input type="number" id="quantity" name="quantity" min="1" required=""><br><br>
+            <input type="number" id="quantity" min="1" ><br><br>
 
             <label for="delivery-date">Delivery Date:</label>
-            <input type="date" id="delivery-date" name="delivery-date" required=""><br><br>
+            <input type="date" id="delivery-date"><br><br>
         </fieldset>
 
         <fieldset>
             <legend>Delivery Details</legend>
             
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required=""><br><br>
+            <input type="text" id="name"><br><br>
 
             <label for="address">Address:</label>
-            <input type="text" id="address" name="address" required=""><br><br>
+            <input type="text" id="address" ><br><br>
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required=""><br><br>
+            <input type="email" id="email" ><br><br>
 
             <label for="phone">Phone Number:</label>
-            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required=""><br><br>
+            <input type="tel" id="phone" pattern="[8-9]{1}-[0-9]{9}" ><br><br>
         </fieldset>
 
         <label for="comments">Additional Comments:</label><br>
-        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Any additional instructions or comments" spellcheck="false"></textarea><br><br>
+        <textarea id="comments" rows="4" cols="50" placeholder="Any some comments" spellcheck="false"></textarea><br><br>
 
         <button type="submit">Submit Order</button>
         <button type="reset">Reset</button>
