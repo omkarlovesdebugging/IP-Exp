@@ -1,176 +1,150 @@
-/* Basic Reset */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body and General Styles */
+/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f4f4f4;
     color: #333;
+    background-color: #f4f4f4;
 }
 
 /* Header Styling */
 #header {
-    background: #4CAF50;
+    background-color: #009688; /* Teal */
     color: white;
-    padding: 20px 0; /* Increased padding for better spacing */
     text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 1em 0;
+    border-bottom: 5px solid #00796b; /* Darker Teal */
 }
 
 #header h1 {
-    margin: 0;
-    font-size: 2.5em; /* Adjusted font size */
-    font-weight: bold; /* Added font weight for emphasis */
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
 }
 
-/* Main Content Layout */
+/* Main Content Styling */
 #main {
     display: flex;
     justify-content: space-between;
-    margin: 20px;
+    padding: 20px;
 }
 
-/* Leftside Navigation */
+/* Left Side Styling */
 #Leftside {
     flex: 1;
-    background: #fff;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 #Leftside ul {
     list-style: none;
-    padding: 0;
 }
 
-#Leftside ul li {
+#Leftside li {
     margin-bottom: 10px;
 }
 
 #Leftside a {
     text-decoration: none;
-    color: #4CAF50;
+    color: #009688;
     font-weight: bold;
 }
 
 #Leftside a:hover {
-    text-decoration: underline;
+    color: #00796b;
 }
 
-/* Rightside Content */
+/* Right Side Styling */
 #Rightside {
     flex: 2;
-    background: #fff;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 #Rightside h1 {
-    color: #4CAF50;
-    margin-bottom: 15px;
-    animation: fadeIn 2s;
-}
-
-#ques {
-    color: #FF5722;
-}
-
-.something {
-    display: block;
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 15px;
 }
 
-/* Table Styling */
-#table {
+#Rightside .something {
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+#Rightside table {
     width: 100%;
     border-collapse: collapse;
-    margin: 20px 0;
-    animation: fadeIn 2s;
+    margin-bottom: 20px;
 }
 
-#table td {
+#Rightside th, #Rightside td {
     padding: 10px;
-    border: 1px solid #ddd;
     text-align: center;
+    border: 1px solid #ddd;
 }
 
-#table tr:nth-child(even) {
-    background: #f9f9f9;
-}
-
-#table tr:hover {
-    background: #f1f1f1;
+#Rightside tr.row:nth-child(even) {
+    background-color: #f2f2f2;
 }
 
 /* Form Styling */
 form {
-    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
 }
 
 .labels {
-    display: block;
-    margin-bottom: 5px;
     font-weight: bold;
+    margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="number"],
-textarea {
-    width: 100%;
+input, textarea {
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
     border-radius: 5px;
-    transition: border-color 0.3s ease;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
 }
 
-input[type="text"]:focus,
-input[type="number"]:focus,
-textarea:focus {
-    border-color: #4CAF50;
+input[type="number"] {
+    -moz-appearance: textfield;
 }
 
-/* Button Styling */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 button {
-    background: #4CAF50;
+    background-color: #009688;
     color: white;
     border: none;
     padding: 10px 20px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+    font-size: 1em;
 }
 
 button:hover {
-    background: #45a049;
+    background-color: #00796b;
 }
 
 /* Footer Styling */
 footer {
     text-align: center;
     padding: 10px;
-    background: #4CAF50;
+    background-color: #009688;
     color: white;
     position: fixed;
-    bottom: 0;
     width: 100%;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+    bottom: 0;
 }
