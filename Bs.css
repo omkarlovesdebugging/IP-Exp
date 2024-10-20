@@ -1,0 +1,232 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+#navbarNavAltMarkup{
+    justify-content: right;
+}
+
+.navbar{
+background-color: white;
+
+}
+
+.nav-link{
+    color: black;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-link:hover{
+    color: white;
+    background-color: black;
+}
+.navbar-brand{
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* main section */
+
+.main{
+    background: url(./Omkar\ Gholap.png)no-repeat;
+    background-size: cover ;
+    width: 100%;
+    height: 95vh;
+    color: black;
+}
+
+.main h3{
+    font-size: 4.4rem;
+    font-weight: 700;
+}
+
+.main h6{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height: 1;
+    border-bottom: 3px solid rgb(223, 20, 109);
+    width: 40%;
+}
+.main .bt1{
+    height: 55px;
+    width: 138px;
+    background-color: rgb(223, 20, 109);
+    color: white;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.main .bt2:hover{
+    background-color: rgb(223, 20, 109);
+    transition: 0.5s;
+}
+.main .bt2{
+    height: 55px;
+    width: 138px;
+    background-color: transparent;
+    color: rgb(223, 20, 109);
+    outline: none;
+    border: 1px solid rgb(223, 20, 109);
+    font-weight: bold;
+    border-radius: 5px;
+}
+.main .bt2:hover{
+    background-color: rgb(223, 20, 109);
+    transition: 0.5s;
+    color: white;
+    
+}
+
+.about img{
+    -webkit-box-shadow: 10px 18px 48px 18px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 18px 48px 18px rgba(0,0,0,0.75);
+    box-shadow: 10px 18px 48px 18px rgba(0,0,0,0.75);
+    
+}
+
+h1{
+    font-size: 3rem;
+    font-weight: 900;
+}
+.progress{
+    background-color: rgb(223, 219, 219);
+    justify-content: flex-start;
+    border-radius: 50px;
+    align-items: center;
+    position: relative;
+    display: flex;
+    height: 25px;
+    width: 100%;
+    -webkit-box-shadow: inset 1px -3px 176px -97px rgba(0,0,0,0.75);
+    -moz-box-shadow: inset 1px -3px 176px -97px rgba(0,0,0,0.75);
+    box-shadow: inset 1px -3px 176px -97px rgba(0,0,0,0.75);
+}
+
+.pro-value1{
+    animation: load1 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+    align-items : center
+    ;
+}
+.pro-value2{
+    animation: load2 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+    align-items : center
+    ;
+}
+.pro-value3{
+    animation: load3 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+    align-items : center
+    ;
+}
+.pro-value4{
+    animation: load4 3s normal forwards;
+    border-radius: 50px;
+    background-color: black;
+    height: 25px;
+    width: 0;
+    align-items : center
+    ;
+}
+
+.progress p{
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 12px;
+    padding-left: 10px;
+}
+.progress span {
+
+}
+
+@keyframes  load1 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 90%  ;
+    }
+}
+@keyframes  load2 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 80%  ;
+    }
+}
+@keyframes  load3 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 95%  ;
+    }
+}
+@keyframes  load4 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 65%  ;
+    }
+}
+
+.progress span{
+    float: right;
+    padding-right: 15px;
+}
+
+.btn1{
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+}
+.btn1:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid black;
+    transition: 0.5s;
+
+}
+.btn2{
+    height: 40px;
+    width: 145px;
+    outline: none;
+    border: 1px solid black;
+    background-color: transparent;
+    color: black;
+    border-radius: 4px;
+}
+.btn2:hover{
+    background-color: black;
+    color: white;
+    border: none;
+    transition: 0.5s;
+
+}
